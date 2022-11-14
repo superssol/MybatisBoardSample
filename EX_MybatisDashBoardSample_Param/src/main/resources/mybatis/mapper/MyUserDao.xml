@@ -10,7 +10,7 @@
 	</select>
 	
 	<select id="viewDao" resultType="com.exerciese.spring.dto.SimpleBbsDto">
-		select * from simple_bbs where id = ${param1}
+		select * from simple_bbs where id = ${0}
 	</select>
 	
 	<insert id="writeDao">
@@ -19,6 +19,6 @@
 	</insert>
 	
 	<delete id="deleteDao">
-		delete from simple_bbs where id = ${param1}
+		delete from simple_bbs where id = ${_id}
 	</delete>
 </mapper>
